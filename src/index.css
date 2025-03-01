@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f7fafc, #e6f0fa);
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}

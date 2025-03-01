@@ -1,0 +1,115 @@
+.breathing-exercise {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7fafc, #e6f0fa);
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.breathing-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 240, 250, 0.5);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Consistent spacing */
+}
+
+.breathing-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c5282;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.breathing-instructions {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0; /* Remove default margin */
+  max-width: 400px;
+}
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  background: #e6f0fa; /* Default color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(104, 211, 145, 0.2);
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative; /* Ensure it stays contained */
+}
+
+.breathing-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(44, 82, 130, 0.2);
+}
+
+.btn {
+  padding: 0.9rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(45deg, #68d391, #48bb78);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(104, 211, 145, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #48bb78, #38a169);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(104, 211, 145, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .breathing-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .breathing-title {
+    font-size: 1.8rem;
+  }
+
+  .breathing-instructions {
+    font-size: 1rem;
+  }
+
+  .breathing-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .breathing-text {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}

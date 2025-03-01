@@ -1,0 +1,133 @@
+.payment {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7fafc, #e6f0fa);
+  overflow: hidden;
+}
+
+.payment-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 240, 250, 0.5);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.payment-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c5282;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.payment-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.payment-verified {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.verified-icon {
+  font-size: 4rem;
+  color: #68d391;
+}
+
+.payment-message {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.input {
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #68d391;
+  outline: none;
+}
+
+.btn {
+  padding: 0.9rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(45deg, #68d391, #48bb78);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(104, 211, 145, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #48bb78, #38a169);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(104, 211, 145, 0.3);
+}
+
+.btn:disabled {
+  background: #e2e8f0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .payment-container {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .payment-title {
+    font-size: 1.8rem;
+  }
+
+  .payment-message {
+    font-size: 1rem;
+  }
+
+  .payment-row {
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}

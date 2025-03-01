@@ -1,0 +1,13 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7fafc, #e6f0fa);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

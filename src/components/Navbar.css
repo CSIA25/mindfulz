@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(44, 82, 130, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(230, 240, 250, 0.5);
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c5282;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar-link {
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background: rgba(104, 211, 145, 0.1);
+  color: #2c5282;
+}
+
+.navbar-user {
+  position: relative;
+}
+
+.navbar-user-btn {
+  background: none;
+  border: none;
+  color: #4a5568;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-user-btn:hover {
+  background: rgba(104, 211, 145, 0.1);
+  color: #2c5282;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(44, 82, 130, 0.2);
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 240, 250, 0.5);
+}
+
+.navbar-dropdown li {
+  padding: 0;
+}
+
+.navbar-dropdown-link,
+.navbar-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-dropdown-link:hover,
+.navbar-dropdown-btn:hover {
+  color: #2c5282;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

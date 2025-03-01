@@ -1,0 +1,32 @@
+.schedule {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .schedule h3 {
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .schedule-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .schedule-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+    transition: background 0.2s ease;
+  }
+  
+  .schedule-item:hover {
+    background: #f9fafb;
+  }
+  
+  .status-booked {
+    color: #16a34a;
+    font-weight: 500;
+  }
